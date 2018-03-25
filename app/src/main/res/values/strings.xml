@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Score Keeper</string>
+    <string name="team1">Madrid</string>
+    <string name="button1">Goal</string>
+    <string name="button2">Foul</string>
+    <string name="team2">Barcelona</string>
 </resources>

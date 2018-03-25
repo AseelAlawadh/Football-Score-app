@@ -1,8 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    >
+    android:layout_height="match_parent">
 
 
     <LinearLayout
@@ -12,34 +11,33 @@
 
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical"
             tools:context=".MainActivity">
-
 
             <TextView
                 android:id="@+id/madrid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:padding="10dp"
-                android:text="Madrid"
-                android:fontFamily="sans-serif"
-                android:textSize="14sp"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:text="@string/team1"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/score_madrid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="cursive"
                 android:gravity="center_horizontal"
                 android:paddingBottom="24dp"
                 android:text="0"
-                android:fontFamily="cursive"
-                android:textSize="56sp"
                 android:textColor="#000"
-                />
+                android:textSize="56sp" />
 
             <Button
                 android:id="@+id/button"
@@ -48,8 +46,9 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Goal"
-                android:onClick="addOneForTeamMadrid"/>
+                android:onClick="addOneForTeamMadrid"
+                android:text="@string/button1" />
+
 
             <Button
                 android:id="@+id/button2"
@@ -58,20 +57,21 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Foul"
-                android:onClick="addOneForTeamMadrid"/>
+                android:onClick="addOneForTeamMadrid"
+                android:text="@string/button2" />
+
         </LinearLayout>
 
-<view
-    android:layout_width="1dp"
-    android:layout_height="match_parent"
-    android:layout_marginTop="8dp"
-    android:background="@color/colorPrimary"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary" />
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical"
             tools:context=".MainActivity">
 
@@ -80,23 +80,23 @@
                 android:id="@+id/barcelona"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:padding="10dp"
-                android:text="Barcelona"
-                android:fontFamily="sans-serif"
-                android:textSize="14sp"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:text="@string/team2"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/score_barcelona"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="cursive"
                 android:gravity="center_horizontal"
                 android:paddingBottom="24dp"
                 android:text="0"
-                android:fontFamily="cursive"
-                android:textSize="56sp"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:textSize="56sp" />
 
             <Button
                 android:id="@+id/button3"
@@ -105,9 +105,9 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Goal"
                 android:onClick="addOneForTeamBarcelona"
-                />
+                android:text="@string/button1" />
+
 
             <Button
                 android:id="@+id/button4"
@@ -116,15 +116,18 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Foul"
-                android:onClick="addOneForTeamBarcelona"/>
+                android:onClick="addOneForTeamBarcelona"
+                android:text="@string/button2" />
+
         </LinearLayout>
     </LinearLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rest"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="Rest"/>
+        android:onClick="Rest"
+        android:text="Rest" />
+
 </RelativeLayout>
